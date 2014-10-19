@@ -78,7 +78,7 @@ $db = array(
 
 
  			<?php 
- 				for ($ii=0; $ii < 10; $ii++) { 
+ 				for ($j=0; $j < 10; $j++) { 
  			?>
  			<div class="row bubble-row">
 
@@ -86,7 +86,7 @@ $db = array(
 
  					for ($i=0; $i < 12 ; $i++) { 
  				?>
- 				<div class="col-xs-1 col-sm-1 bubble-item" bubble-owner="timwu" bubble-index-row="<?php echo $ii; ?>" bubble-index-col="<?php echo $i; ?>">
+ 				<div class="col-xs-1 col-sm-1 bubble-item" bubble-owner="timwu" bubble-index-row="<?php echo $j; ?>" bubble-index-col="<?php echo $i+1; ?>">
  					<div class="label label-primary">捏我</div>
  				</div>	
  				<?php
