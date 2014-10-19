@@ -21,7 +21,7 @@ $_db = mysqli_connect($db['host'],$db['dbuser'],$db['dbpass'],$db['dbname']);
  	<link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
- <div class="container">
+ <div class="container-fluid">
 
 
 
