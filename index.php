@@ -33,12 +33,31 @@ $db = array(
 
  	</div>
 
+
+	<div class="row week-row">
+
+
+		<div class="col-sm-2 col-xs-2"></div>
+
+		<div class="col-sm-10 col-xs-10 bubble-table">
+
+			<?php 
+				for ($week=0; $week <12 ; $week++) { 
+			?>
+				<div class="week-item col-xs-1"><?php echo 'week ' . ($week+1); ?></div>
+			<?php
+				}
+			 ?>
+		</div>
+	</div>
+
  	<div class="row">
 
 
 
  		<!-- name col -->
- 		<div class="col-sm-2 col-xs-2">
+ 		<div class="col-sm-2 col-xs-2 name-row">
+
 
  			<div class="student-name">tim wu</div>
  			<div class="student-name">tim wu</div>
@@ -55,6 +74,9 @@ $db = array(
  		<!-- bubble table -->
  		<div class="col-sm-10 col-xs-10 bubble-table">
 
+
+
+
  			<?php 
  				for ($ii=0; $ii < 10; $ii++) { 
  			?>
@@ -65,7 +87,7 @@ $db = array(
  					for ($i=0; $i < 12 ; $i++) { 
  				?>
  				<div class="col-xs-1 col-sm-1 bubble-item">
- 					捏我
+ 					<span class="label label-primary">捏我</span>
  				</div>	
  				<?php
  					}
