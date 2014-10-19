@@ -86,8 +86,8 @@ $db = array(
 
  					for ($i=0; $i < 12 ; $i++) { 
  				?>
- 				<div class="col-xs-1 col-sm-1 bubble-item">
- 					<span class="label label-primary">捏我</span>
+ 				<div class="col-xs-1 col-sm-1 bubble-item" bubble-owner="timwu" bubble-index-row="<?php echo $ii; ?>" bubble-index-col="<?php echo $i; ?>">
+ 					<div class="label label-primary">捏我</div>
  				</div>	
  				<?php
  					}
