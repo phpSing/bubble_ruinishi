@@ -8,7 +8,7 @@ $db = array(
 	'dbuser' => 'root',
 	'dbpass' => 'root'
 	);
-//$_db = mysqli_connect($db['host'],$db['dbuser'],$db['dbpass'],$db['dbname']);
+$_db = mysqli_connect($db['host'],$db['dbuser'],$db['dbpass'],$db['dbname']);
 ?>
  <!doctype html>
  <html lang="en">
@@ -20,7 +20,6 @@ $db = array(
  	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
  	<link rel="stylesheet" type="text/css" href="style.css">
  	<script type="text/javascript" src="jquery.js"></script>
- 	<script type="text/javascript" src="jquery-mobile.js"></script>
  	<script type="text/javascript" src="bubble.js"></script>
  </head>
  <body>
@@ -39,7 +38,7 @@ $db = array(
 
 		<div class="col-sm-2 col-xs-2"></div>
 
-		<div class="col-sm-10 col-xs-10 bubble-table">
+		<div class="col-sm-10 col-xs-10">
 
 			<?php 
 				for ($week=0; $week <12 ; $week++) { 
@@ -61,15 +60,10 @@ $db = array(
 
  			<div class="student-name">tim wu</div>
  			<div class="student-name">tim wu</div>
- 			<div class="student-name">tim wu</div>
- 			<div class="student-name">tim wu</div>
- 			<div class="student-name">tim wu</div>
 
- 			<div class="student-name">tim wu</div>
- 			<div class="student-name">tim wu</div>
- 			<div class="student-name">tim wu</div>
- 			<div class="student-name">tim wu</div>
- 			<div class="student-name">tim wu</div>
+ 			<div class="student-name new-name">
+ 				<input type="text" class="form-control" placeholder="name" name="student_name" id="student_name" />
+ 			</div>
  		</div>
  		<!-- bubble table -->
  		<div class="col-sm-10 col-xs-10 bubble-table">
@@ -78,7 +72,7 @@ $db = array(
 
 
  			<?php 
- 				for ($j=0; $j < 10; $j++) { 
+ 				for ($j=0; $j < 2; $j++) { 
  			?>
  			<div class="row bubble-row">
 

@@ -7,7 +7,19 @@
 		&:nth-child(even) {
 			background-color: #eee;
 		}
-		padding: 1em 0;
+		&.new-name  {
+			position: relative;
+			#student_name {
+				width: 100%;
+			}
+			.submit-name {
+				position: absolute;
+				right: -6.5em;
+				top: 2em;
+			}
+			
+		}
+		padding: 2em 0;
 		font-size: 1em;
 		text-transform: uppercase;
 		border-bottom: 1px solid #eee;
@@ -28,7 +40,7 @@
 	.bubble-table {
 		font-size: 1em;
 		.bubble-row {
-			padding: 1em 0;
+			padding: 2em 0;
 			border-bottom: 1px solid #eee;
 			&:nth-child(even) {
 				background-color: #eee;
