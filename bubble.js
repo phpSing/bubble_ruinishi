@@ -25,6 +25,7 @@
 				$('.submit-name').unbind('click').click(function(e){
 					var $this = $(this);
 					var student_name = $('#student_name').val();
+					if (!student_name) return;
 					/* mobile submit name */
 					$.post('sql.php', {
 						student_name : $('#student_name').val(),
@@ -58,6 +59,7 @@
 			if (key == 13) {
 				var $this = $('.submit-name');
 				var student_name = $('#student_name').val();
+				if (!student_name) return;
 				/* record into databaase */
 				$.post('sql.php', {
 					student_name : $('#student_name').val(),

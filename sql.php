@@ -4,9 +4,16 @@
 */
 $db = array(
 	'host' => 'localhost',
-	'dbname' => 'shiruini_fake2',
-	'dbuser' => 'shiruini_huahua',
-	'dbpass' => '198730wu'
+	'dbname' => 'bubble', //shiruini_fake2
+	'dbuser' => 'root', //shiruini_huahua
+	'dbpass' => 'root' //198730wu
+	);
+
+$db2 = array(
+	'host' => 'localhost',
+	'dbname' => 'shiruini_fake2', //shiruini_fake2
+	'dbuser' => 'shiruini_huahua', //shiruini_huahua
+	'dbpass' => '198730wu' //198730wu
 	);
 $_db = mysqli_connect($db['host'],$db['dbuser'],$db['dbpass'],$db['dbname']);
 $act = $_REQUEST['act'];
