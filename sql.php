@@ -4,9 +4,9 @@
 */
 $db = array(
 	'host' => 'localhost',
-	'dbname' => 'bubble',
-	'dbuser' => 'root',
-	'dbpass' => 'root'
+	'dbname' => 'shiruini_fake2',
+	'dbuser' => 'shiruini_huahua',
+	'dbpass' => '198730wu'
 	);
 $_db = mysqli_connect($db['host'],$db['dbuser'],$db['dbpass'],$db['dbname']);
 $act = $_REQUEST['act'];
